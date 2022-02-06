@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>815</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btnViewImage">
+       <property name="text">
+        <string>헤더보기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QComboBox" name="cboImage">
+       <item>
+        <property name="text">
+         <string>01.udp_header.png</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>02.tcp_header.png</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>03.ip_header.png</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>04.icmp_header.png</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="btnViewList">
+       <property name="text">
+        <string>내용보기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QComboBox" name="cboContents">
+       <item>
+        <property name="text">
+         <string>01.프로토콜/포트보기</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>02.struct 모듈의 서식 문자열</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="btnPortScan">
+       <property name="text">
+        <string>PortScan</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="5">
+      <widget class="QTextEdit" name="txtContents"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="btnUdpClient">
+       <property name="text">
+        <string>UDP Client</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="btnTcpClient">
+       <property name="text">
+        <string>TCP Client</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="btnSniffing">
+       <property name="text">
+        <string>Packet Sniffing</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="btnSendPing">
+       <property name="text">
+        <string>Send Ping</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QPushButton" name="btnScan">
+       <property name="text">
+        <string>Scan</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

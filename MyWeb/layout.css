@@ -1,0 +1,48 @@
+#wrapper {
+    margin: auto;
+    width:840;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+#header {
+    background-image: url(./img/top.jpg);
+    background-size: 100% 100%;
+    border: 1px solid #ccc;
+    height: 100px;
+}
+
+#contents {
+    border: 1px solid #ccc;
+    width: 600px;
+    float: right;
+
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#side {
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 300px;
+
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#footer {
+    clear: both; /* clear 는 float 속성 초기화임. */
+    border: 1px solid #ccc;
+}
+
+.login { #login class에 적용
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 3px;
+    padding: 3px;
+}
+
+.login > input { #login 클래스에 속한 input에 스타일을 적용하라...
+    margin-top: 5px;
+}

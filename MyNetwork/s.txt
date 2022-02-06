@@ -1,0 +1,12 @@
+* 크롬
+https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+* ie드라이버
+https://selenium.dev/downloads
+
+
+* edge 드라이버
+https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver
+
+* FireFox 드라이버
+https://github.com/mozilla/geckodriver/releases

@@ -1,0 +1,52 @@
+/* 색상표 : #https://html-color-codes.info/
+ * 이미지 : https://cafe.naver.com/yogibbs
+ http://bootstrapk.com/
+ https://getbootstrap.com/
+*/
+strong {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+em {
+    color: blue;
+    font-weight: italic;
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: square;
+}
+
+.author {
+    color:blue;
+    font-weight:bold;
+
+}
+
+a:link {
+    color: green;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+    text-decoration: underline;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse; // td 셀 사이의 간격 제거
+    width: 400px;
+    margin: 30px; #표 밖의 주위로 30px 간격을 띄우다...
+
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+th {
+    background: silver;
+}

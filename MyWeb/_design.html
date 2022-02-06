@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>내 홈페이지</title>
+
+
+     <link rel="stylesheet" type="text/css" href="4_grid-guide.css">
+    <link href="http://fonts.googleapis.com/css?family=Paytone+One" rel='stylesheet' type = 'text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+
+<style>
+
+/* -------------------- 599px 이하 -----------*/
+@media (max-width:599px) {
+.menu li a {padding: 10px 3px;
+            font-size: 11px;
+            }
+
+/* 사이트 이름과 기사제목 */
+.site h1 {font-size: 20px}
+
+.story h1 {font-size: 26px}
+
+}
+
+
+/* -------------------- 600px이상 767px 이하 -----------*/
+@media (min-width:599px) and (max-width:599px) {
+
+}
+
+/* -------------------- 768px 이상 -----------*/
+@media (min-width:768px) {
+.boxA:after { content: "";
+                display: block;
+                clear: both; }
+
+.box3 { float: left;
+        width: 70%;}
+.box4 { float: left;
+        width: 30%;}
+
+body  {margin: 0;
+        font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+        }
+
+/* 박스의 왼쪽 오른쪽에 공백확보 */
+.box1, boxA, box2-inner, box5-inner {padding-left: 10px;
+                                    padding-right: 10px;
+                                    }
+
+/* 사이트 이름 */
+.site h1 a {color: #83a4a8;
+            text-decoration: none}
+.site h1 {margin:0;
+            font-size: 30px;
+            font-family: 'Paytone One', sans-serif;
+            font-weight: normal}
+
+/* 네비게이션 */
+.menu ul {margin:0;
+        padding:0;
+        list-style:none; }
+
+.menu li a { display: block;
+            padding: 15px;
+            padding: 15px;
+            color: #000000;
+            font-size: 14px;
+            text-decoration: none;}
+
+.menu li a:hover {background-color: #75dbe7}
+
+.menu ul:after {content:"";
+                display: block;
+                clear: both}
+
+
+.menu li {float:left;
+            width: auto}
+
+/* 기사 */
+.story h1 {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 36px}
+.story p {margin-top: 0;
+            margin-bottom: 20px}
+
+.story img {max-width: 100%;
+            height: auto;}
+
+/* 기사의 소제목 */
+.story h2 {margin-top: 40px;
+            padding-left: 10px;
+            border-left: solid 10px #7cbac1;
+            font-weight: normal}
+
+
+
+/* 관련기사 메뉴 */
+.relation       {margin-top: 40px;
+                padding: 20px;
+                background-color: #f0f0d4
+                    }
+
+
+.relation h1    {margin-top: 0;
+                margin-bottom: 5px;
+                color: #727224;
+                font-size: 20px;
+                font-weight: normal;
+                }
+.relation ul {margin: 0;
+                padding: 0;
+                list-style: none}
+
+.relation li a {display: block;
+                padding: 5px;
+                color: #000000;
+                font-size: 14px;
+                text-decoration: none;
+                }
+
+.relation li a:hover {text-decoration: underline}
+
+.relation ul:after {content: "";
+                    display:block;
+                    clear: both;}
+
+.relation li {float: left;
+                width: 25%}
+
+.relation img {max-width: 100%;
+                height: auto;
+                border: none;
+                }
+
+
+/* 사이드 메뉴 */
+.sidemenu       {margin-bottom: 30px}
+.sidemenu ul {margin:0;
+                padding: 0;
+                list-style: none}
+
+.sidemenu li a {display: block;
+                padding: 5px;
+                color: #000000;
+                font-size:14px;
+                text-decoration: none}
+
+.sidemenu li a:hover {background-color: #eeeeee}
+
+.sidemenu h1 {margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: dotted 2px #dddddd;
+            color: #666666;
+            font-size: 18px}
+
+.sidemenu i {margin-right: 5px;
+            color: #888888}
+
+/* 추천 메뉴 */
+.recommend       {margin-bottom: 30px}
+
+.recommend ul {margin:0;
+                padding: 0;
+                list-style: none}
+
+.recommend li a {display: block;
+                 margin-bottom: 10px;
+                padding: 0px;
+                color: #000000;
+                font-size:14px;
+                text-decoration: none}
+
+.recommend li a:hover {background-color: #eeeeee;
+                        opacity: 0.8}
+
+.recommend h1 {margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: dotted 2px #dddddd;
+            color: #666666;
+            font-size: 18px}
+
+.recommend img {width: 100%;
+                height: auto;
+                border: none;
+                vertical-align: bottom}
+
+.recommend .text {padding: 5px ;
+                    background-color : rgba(0,0,0,0.5);
+                    color: #ffffff}
+
+/* 추천 기사 메뉴의 글자 중첩 */
+.recommend a {position: relative}
+
+.recommend .text {position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    -moz-box-sizing: brder-box;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box}
+
+
+/* 인기 메뉴 */
+
+
+.popular       {margin-bottom: 30px}
+
+.popular ul {margin:0;
+                padding: 0;
+                list-style: none}
+
+.popular li a {display: block;
+                padding: 5px;
+                border-bottom: dotted 1px #dddddd;
+                color: #2288bb;
+                font-size:14px;
+                text-decoration: none}
+
+.popular li a:hover {background-color: #eeeeee}
+
+.popular h1 {margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: dotted 2px #dddddd;
+            color: #666666;
+            font-size: 18px}
+
+.popular li a img {border: none}
+
+.popular a:after {content: "";
+                display: block;
+                clear: both}
+
+.popular img {float: left;
+                width: 60px}
+
+.popular .text {float:none;
+                width: auto;
+                margin-left: 60px;
+                padding-left: 15px}
+
+.popular span {display: block;
+                color: #666666;
+                font-size: 12px}
+
+
+.copyright p {margin: 0;
+            color: #666666;
+            font-size: 14px;}
+
+/* box2를 바 형태로 디자인 */
+.box2 {background-color: #7cbac1}
+
+/* box5 위에 테두리 삽입 */
+.box5 {border-top: solid 1px #dddddd}
+
+/* 박스의 위아래 간격 */
+.box1 {padding-top: 8px;
+        padding-bottom: 8px}
+
+.box3 {padding-top: 40px;
+        padding-bottom: 30px}
+
+.box4 {padding-top: 40px;
+        padding-bottom: 30px}
+
+.box5 {padding-top: 15px;
+        padding-bottom: 15px}
+
+
+/* box3과 box4의 왼쪽 오른쪽 간격 */
+.box3 {padding-right: 50px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box} /* 박스크기는 border box로 지정 */
+
+/* 기사 작성일 */
+.storyinfo {margin-top: -10px;
+            margin-bottom: 20px}
+
+.storyinfo i {margin-right: 5px;
+                color: #aaaaaa;
+                font-size: 20px}
+
+
+/* 기사의 분류 */
+.story-cat {margin-bottom: 25px}
+
+.story-cat ul {margin:0;
+                padding: 0;
+                list-style:none}
+
+.story-cat li a { display: block;
+                    margin-right: 5px;
+                    padding: 3px;
+                    border-radius: 2px;
+                    color: #ffffff;
+                    background-color: #75dbe7;
+                    font-size: 12px;
+                    text-decoration:none}
+
+.story-cat li a:hover {background-color: #94ecf6}
+
+.story-cat ul:after {content:"";
+                    display: block;
+                    clear:both}
+
+.story-cat li {float: left;
+                width: auto}
+
+/* sns 공유 */
+
+
+
+/* SNS 공유 버튼 */
+
+
+.share	{margin-top: 40px}
+
+.share ul	{margin: 0;
+	padding: 0;
+	list-style: none}
+
+.share li a	{display: block;
+	padding: 10px 5px;
+	color: #ffffff;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none}
+
+.share-tw	{background-color: #55acee}
+.share-fb	{background-color: #3b5998}
+.share-gp	{background-color: #dd4b39}
+
+.share li a:hover	{opacity: 0.8}
+
+.share ul:after	{content: "";
+	display: block;
+	clear: both}
+
+.share li	{float: left;
+	width: 33.3333%}
+
+
+
+}
+
+/* -------------------- 1040px 이상 -----------*/
+@media (min-width:1040px) {
+/* 전체 너비를 고정 */
+.box1, .boxA, .box2-inner, .box2-inner { width: 1000px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            }
+
+
+
+}
+</style>
+
+
+</head>
+
+<body>
+
+
+<div class="boxA">
+
+    <div class="box1">
+        <div class="site">
+            <h1><a href="#">TimeSwitch</a></h1>
+        </div>
+    </div>
+
+    <div class="box2">
+    <div class="box2-inner">
+
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메인</a> </li>
+                <li><a href="#">잡화</a> </li>
+                <li><a href="#">도구</a> </li>
+                <li><a href="#">외출</a> </li>
+                <li><a href="#">음식</a> </li>
+                <li><a href="#">문의</a> </li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+    <div class="boxA">
+    <div class="box3">
+        <article class="story">
+
+            <div class="story-cat">
+                <ul>
+
+                    <li><a href="#">음식</a></li>
+                    <li><a href="#">외출</a></li>
+                </ul>
+            </div>
+            <h1>토마토를 맛있게 먹는 방법</h1>
+
+            <div class="storyinfo">
+                <time datetime="2014-08-10">
+                    <i class="fa fa-clock-o">2014년 8월 10일</i>
+                </time>
+
+            </div>
+            <p><img src="img/tomato.jpg" alt=""></p>
+
+            <p>수확한 토마토를 바로 먹고 싶어서 서울 외곽에 있는 토마토 농가에 직접 다녀왔습니다. 이번에 온 농가의 토마토는 신선하고 저렴하군요.</p>
+
+            <h2>신선한 토마토 구별 방법</h2>
+            <p>신선한 토마토는 꼭지가 초록색이고 곧게 되어 있습니다. 빨간 열매는 껍질의 감이 좋고 둥근 것이 좋습니다. 당도가 높은 토마토는 물이 가라앉으므로 쉽게 판별할 수 있습니다. 하지만 무조건 달다고 좋은 것은 아니랍니다.</p>
+
+            <h2>토마토 맛있게 먹는 방법</h2>
+            <p>일반적으로 토마토는 물에 씻어서 바로 먹는 것이 가장 좋습니다. 더운 날에 맛있는 토마토를 먹으면 그것만으로도 행복한데요. 수분 공급도 가능해서 일석이조랍니다.</p>
+
+            <p>물론 다른 것을 함께 뿌려 먹는 것도 맛있는데요. 소금, 설탕, 마요네즈, 올리브유를 추천합니다.</p>
+
+
+            <div class="share">
+            <ul>
+            <li><a href="https://twitter.com/intent/tweet?text=[글자]&amp;url=[URL]&amp;via=[계정]" onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-tw">
+                <i class="fa fa-twitter"></i>
+                <span>Twitter</span>로 공유
+            </a></li>
+            <li><a href="http://www.facebook.com/share.php?u=[URL]" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-fb">
+                <i class="fa fa-facebook"></i>
+                <span>Facebook</span>으로 공유
+            </a></li>
+            <li><a href="https://plus.google.com/share?url=[URL]" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-gp">
+                <i class="fa fa-google-plus"></i>
+                <span>Google+</span>로 공유
+            </a></li>
+            </ul>
+            </div>
+
+        </article>
+
+
+        <aside class="relation">
+            <h1>관련기사</h1>
+            <ul>
+                <li><a href="#">
+                    <img src="img/red-150x150.jpg" alt="">
+                    <div class="text">
+                        토마토 재배 8화 - 토마토들이 붉은색으로 물들기 시작합니다.
+                    </div>
+                </a> </li>
+
+                <li><a href="#">
+                    <img src="img/potato-150x150.jpg" alt="">
+                    <div class="text">
+                        맛있는 감자요리
+                    </div>
+                </a> </li>
+
+                <li><a href="#">
+                    <img src="img/eggplant-150x150.jpg" alt="">
+                    <div class="text">
+                        가지를 수확했습니다.
+                    </div>
+                </a> </li>
+
+                <li><a href="#">
+                    <img src="img/can-150x150.jpg" alt="">
+                    <div class="text">
+                        통조림을 활용한 절약과 효율화
+                    </div>
+                </a> </li>
+            </ul>
+        </aside>
+    </div>
+
+    <div class="box4">
+        <aside class="sidemenu">
+            <h1>특집 기사</h1>
+            <ul>
+                <li><a><i class="fa fa-caret-right"></i>알기 쉬운 지도 읽기 방법</a></li>
+                <li><a><i class="fa fa-caret-right"></i>처음부터 시작하는 토마토 기르기</a></li>
+                <li><a><i class="fa fa-caret-right"></i>스마트폰 요리 애플리케이션</a></li>
+                <li><a><i class="fa fa-caret-right"></i>배터리를 오래 쓰는 방법</a></li>
+            </ul>
+        </aside>
+
+        <aside class="recommend">
+            <h1>추천 기사</h1>
+            <ul>
+                <li><a href="#">
+                    <img src="img/flower.jpg" alt="">
+                    <div class="text">
+                    처음부터 시작하는 꽃꽂이
+                    </div>
+                </a></li>
+
+                <li><a href="#">
+                    <img src="img/old.jpg" alt="">
+                    <div class="text">
+                    오래된 스마트폰을 충전했더니..
+                    </div>
+                </a></li>
+
+            </ul>
+        </aside>
+
+
+        <aside class="popular">
+            <h1>인기 기사</h1>
+            <ul>
+                <li><a href="#">
+                    <img src="img/flower-60x60.jpg" alt="">
+                    <div class="text">
+                    꽃을 좋아하는 사람들의 포인트
+                    <span>외출</span>
+                    </div>
+                </a></li>
+
+                <li><a href="#">
+                    <img src="img/tel-60x60.jpg" alt="">
+                    <div class="text">
+                    애플리케이션의 편리한 사용법
+                    <span>외출</span>
+                    </div>
+
+                </a></li>
+
+                <li><a href="#">
+                    <img src="img/green-60x60.jpg" alt="">
+                    <div class="text">
+                    주말에 찾아갈만한 여행지
+                    <span>외출</span>
+                    </div>
+
+                </a></li>
+
+                <li><a href="#">
+                    <img src="img/bag-60x60.jpg" alt="">
+                    <div class="text">
+                    세계 각지의 쇼핑백
+                    <span>외출</span>
+                    </div>
+
+                </a></li>
+
+                <li><a href="#">
+                    <img src="img/color-60x60.jpg" alt="">
+                    <div class="text">
+                    방의 가구를 꾸미는 방법
+                    <span>외출</span>
+                    </div>
+
+                </a></li>
+
+                <li><a href="#">
+                    <img src="img/sea-60x60.jpg" alt="">
+                    <div class="text">
+                    바다 안에서 만난 것들
+                    <span>외출</span>
+                    </div>
+
+                </a></li>
+
+            </ul>
+        </aside>
+
+
+    </div>
+    </div>
+
+    <div class="box5">
+    <div class="box5-inner">
+        <div class="copyright">
+        <p>Copyright &copy; TimeSwitch</p>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1231</width>
+    <height>927</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>300</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>GroupBox</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>GroupBox</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="1" column="2">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>시간 : </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QLineEdit" name="txtTime"/>
+            </item>
+            <item row="12" column="4" colspan="2">
+             <widget class="QPushButton" name="btnDelete">
+              <property name="text">
+               <string>삭제</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QComboBox" name="cboStatus">
+              <item>
+               <property name="text">
+                <string>05.준비중</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>10.대기중</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>20.작업중</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>30.작업완료</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>90.해당없음</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>구분 : </string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="4">
+             <widget class="QPushButton" name="btnRefresh">
+              <property name="text">
+               <string>Refresh</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="5">
+             <widget class="QPushButton" name="btnPaste">
+              <property name="text">
+               <string>Paste</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <widget class="QLineEdit" name="txtEtc1"/>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>작업구분 :</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="QLineEdit" name="txtTo"/>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>상태구분 :</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="cboJobDiv1">
+              <item>
+               <property name="text">
+                <string>01.DayWork</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>02.ToDoList</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="9" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>To : </string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>일자 : </string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1" colspan="5">
+             <widget class="QLineEdit" name="txtTitle"/>
+            </item>
+            <item row="11" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>기타1 : </string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="2" colspan="2">
+             <widget class="QPushButton" name="btnSave">
+              <property name="text">
+               <string>저장</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QComboBox" name="cboWorkDiv">
+              <item>
+               <property name="text">
+                <string>01.전송필요</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>02.수신필요</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>11.확인필요</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12.작성필요</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>21.Meeting약속</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>22.Meeting</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>23.주간보고</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>31.질문함</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>32.질문받음</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>41.Review</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>99.단순참고</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>제목 : </string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="1">
+             <widget class="QPushButton" name="btnQuery">
+              <property name="text">
+               <string>조회</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="txtDay"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="minimumSize">
+          <size>
+           <width>500</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>GroupBox</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="txtMurexFindKey"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="btnFindMurexTable">
+              <property name="text">
+               <string>뮤렉스 테이블 찾기</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="btnExcelTabList">
+              <property name="text">
+               <string>.엑셀-탭 리스트 추출</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QPushButton" name="btnCaptureStop">
+              <property name="text">
+               <string>중지</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="btnCaptureStart">
+              <property name="text">
+               <string>화면 캡쳐 시작</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="btnGetXMLNode">
+              <property name="text">
+               <string>XML - 노드 추출</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="btnAddDetail">
+              <property name="text">
+               <string>상세추가</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>GroupBox</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QSplitter" name="splitter_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QTableWidget" name="tblFiles">
+          <property name="minimumSize">
+           <size>
+            <width>600</width>
+            <height>0</height>
+           </size>
+          </property>
+          <column>
+           <property name="text">
+            <string>일자</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>시간</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>제목</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>작업구분</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>상태구분</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>To</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Contents</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>기타1</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QSplitter" name="splitter">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <widget class="QTableWidget" name="tblDetails">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <column>
+            <property name="text">
+             <string>일자</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>시간</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>제목</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>작업구분</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>상태구분</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>To</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Contents</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>기타1</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QTextEdit" name="txtContents"/>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

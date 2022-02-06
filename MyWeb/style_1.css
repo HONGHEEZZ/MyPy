@@ -1,0 +1,22 @@
+/* 색상표 : #https://html-color-codes.info/
+*/
+html {
+    font-family: "맑은 고딕", 굴림, 바탕;
+    font-size: 16px;
+    background-color:#eeeeee;
+}
+
+h1, h2 {
+    font-family: 바탕
+}
+
+h1 {
+    font-size:1.7rem;
+    text-align: center;
+    color: maroon;
+}
+
+h2 {
+    font-size:120%;
+    color: blue;
+}
